@@ -15,7 +15,8 @@ WEBS/GreenBrown/
 ├── js/
 │   └── main.js              # Cotizador interactivo, filtros de categoría, acordeones y WhatsApp
 ├── images/
-│   ├── logo.svg             # Logotipo vectorizado de Green Brown
+│   ├── logo.png             # Logotipo oficial GB Green Brown (transparencia limpia para cabecera)
+│   ├── logo-light.png       # Variante clara del logo oficial para el pie de página oscuro
 │   ├── hero-art.svg         # Ilustración paisajística con fauna autóctona (teros)
 │   ├── service-mantenimiento.svg
 │   ├── service-grama.svg
