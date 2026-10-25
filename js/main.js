@@ -182,31 +182,4 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('is-revealed'));
   }
 
-  // 8. FILTROS DE CATEGORÍA EN SERVICIOS.HTML
-  const filterBtns = document.querySelectorAll('.filter-tab-btn');
-  const serviceItems = document.querySelectorAll('.detailed-service-item');
-
-  if (filterBtns.length > 0 && serviceItems.length > 0) {
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const filterValue = btn.getAttribute('data-filter');
-
-        serviceItems.forEach(item => {
-          const category = item.getAttribute('data-category');
-          if (filterValue === 'all' || category === filterValue) {
-            item.classList.remove('is-hidden');
-            setTimeout(() => {
-              item.classList.add('is-revealed');
-            }, 50);
-          } else {
-            item.classList.add('is-hidden');
-          }
-        });
-      });
-    });
-  }
-
 });
