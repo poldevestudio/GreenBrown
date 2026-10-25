@@ -11,37 +11,47 @@ Desarrollado por **Poldev Estudio** bajo estándares de diseño minimalista, Mob
 ```
 WEBS/GreenBrown/
 ├── css/
-│   └── style.css            # Sistema de diseño orgánico (bosque, musgo, arena y tierra)
+│   └── style.css            # Sistema de diseño orgánico + Scroll Reveal + páginas modulares
 ├── js/
-│   └── main.js              # Cotizador interactivo, acordeones FAQ y lógica de WhatsApp
+│   └── main.js              # Cotizador interactivo, filtros de categoría, acordeones y WhatsApp
 ├── images/
 │   ├── logo.svg             # Logotipo vectorizado de Green Brown
 │   ├── hero-art.svg         # Ilustración paisajística con fauna autóctona (teros)
 │   ├── service-mantenimiento.svg
 │   ├── service-grama.svg
 │   ├── service-industrial.svg
-│   └── service-poda.svg
-├── index.html               # Estructura semántica HTML5 optimizada para SEO local
+│   ├── service-poda.svg
+│   ├── gallery-corte-patron.svg
+│   ├── gallery-grama-panes.svg
+│   ├── gallery-parque-country.svg
+│   └── gallery-predio-industrial.svg
+├── index.html               # Landing de conversión rápida (Hero, Cotizador, Resumen y Cobertura)
+├── servicios.html           # Página técnica detallada (Fichas operativas, filtros y galería)
 └── README.md
 ```
 
 ---
 
-## 🎯 Características y Diferenciales
+## 🎯 Arquitectura Dividida (Index + Servicios)
 
-1. **Cotizador Rápido Interactivo en 3 Pasos**: Permite al visitante seleccionar el tipo de propiedad, la superficie aproximada y la labor requerida. Genera en tiempo real un mensaje personalizado listo para enviar por WhatsApp.
-2. **Estrategia sin Local Físico**: Al ser un servicio a domicilio, se destaca el radio de cobertura geográfico (Escobar, San Sebastián, Puertos, Maschwitz, Tigre, Benavídez, Pilar y parques industriales) en lugar de un pin estático.
-3. **Diseño Minimalista Orgánico**: Paleta de colores tierra y bosque profundo (`#14281D`, `#3A6946`, `#8C6541`, `#EDE5D8`), tipografía contemporánea (`Plus Jakarta Sans` e `Inter`) y espacios limpios.
-4. **Conversión Inmediata**: Botón flotante pulsante de WhatsApp con tooltip, barra superior de aviso y botones directos de cotización en cada bloque.
-5. **Autonomía y Cero Dependencias**: HTML5, CSS3 y JavaScript nativo sin librerías pesadas ni frameworks, asegurando una carga ultra veloz en cualquier teléfono.
+1. **`index.html` (Landing de Conversión Directa)**:
+   - Diseñado para responder en segundos: Hero con propuesta de valor, cotizador interactivo rápido en 30 segundos, resumen de servicios, radio de cobertura sin local físico, diferenciales de confianza y FAQ.
+2. **`servicios.html` (Catálogo Técnico & Galería)**:
+   - Diseñado para clientes residenciales, arquitectos o administraciones que requieren mayor detalle operativo:
+     - Filtros interactivos por categoría (Corte, Grama, Industrial, Poda).
+     - Fichas técnicas operativas por servicio (maquinaria utilizada, frecuencia recomendada, tratamiento de restos y tiempos de obra).
+     - Galería visual de terminaciones reales (patrones rayados, panes frescos de grama, parques con piscina).
+     - Botón de cotización específico por cada disciplina.
+3. **Scroll Reveal & Microinteracciones**:
+   - Animaciones fluidas al hacer scroll basadas en `IntersectionObserver`, ligeras y accesibles (`prefers-reduced-motion`).
 
 ---
 
 ## ⚙️ Configuración
 
 Para vincular el número de WhatsApp real del cliente:
-1. Abrir `js/main.js` y editar la constante:
+1. Abrir `js/main.js` y editar:
    ```javascript
    const WHATSAPP_PHONE = '54911XXXXXXXX'; // Reemplazar con el número real
    ```
-2. En `index.html`, buscar `5491100000000` y reemplazarlo con el mismo número para los enlaces estáticos.
+2. Reemplazar `5491100000000` en los archivos HTML (`index.html` y `servicios.html`).
