@@ -41,11 +41,12 @@ WEBS/GreenBrown/
 ## 🎯 Arquitectura Dividida (Index + Servicios)
 
 1. **`index.html` (Landing de Conversión Directa)**:
-   - Diseñado para responder en segundos: Hero con propuesta de valor, cotizador interactivo rápido en 30 segundos, resumen de servicios, radio de cobertura sin local físico, diferenciales de confianza y FAQ.
-2. **`servicios.html` (Catálogo Técnico & Galería)**:
+   - Diseñado para responder en segundos: Hero con propuesta de valor, cotizador interactivo rápido en 30 segundos, resumen de servicios, diferenciales de confianza y FAQ.
+2. **`servicios.html` (Catálogo Técnico, Galería & Cobertura)**:
    - Diseñado para clientes residenciales, arquitectos o administraciones que requieren mayor detalle operativo:
      - Filtros interactivos por categoría (Corte, Grama, Industrial, Poda).
      - Fichas técnicas operativas por servicio (maquinaria utilizada, frecuencia recomendada, tratamiento de restos y tiempos de obra).
+     - Módulo de cobertura geográfica por corredores y countries de Zona Norte.
      - Galería visual de terminaciones reales (patrones rayados, panes frescos de grama, parques con piscina).
      - Botón de cotización específico por cada disciplina.
 3. **Scroll Reveal & Microinteracciones**:
