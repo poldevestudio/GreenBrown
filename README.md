@@ -17,6 +17,11 @@ WEBS/GreenBrown/
 ├── images/
 │   ├── logo.png             # Logotipo oficial GB Green Brown (transparencia limpia para cabecera)
 │   ├── logo-light.png       # Variante clara del logo oficial para el pie de página oscuro
+│   ├── hero-bg.jpg          # Fondo paisajístico fotográfico para Hero con sutil bokeh y viñeta
+│   ├── card-autonomia.jpg   # Fondo fotográfico para tarjeta Maquinaria Propia
+│   ├── card-periodicidad.jpg# Fondo fotográfico para tarjeta Mantenimiento Programado
+│   ├── card-entorno.jpg     # Fondo fotográfico para tarjeta Entorno y Privacidad
+│   ├── card-seriedad.jpg    # Fondo fotográfico para tarjeta Respaldo y Seriedad
 │   ├── hero-art.svg         # Ilustración paisajística con fauna autóctona (teros)
 │   ├── service-mantenimiento.svg
 │   ├── service-grama.svg

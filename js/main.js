@@ -28,13 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenuBtn.addEventListener('click', () => {
       mainNav.classList.toggle('active');
       mobileMenuBtn.classList.toggle('open');
+      // Bloquear scroll de fondo cuando el menú está abierto
+      if (mainNav.classList.contains('active')) {
+        document.body.style.overflowY = 'hidden';
+      } else {
+        document.body.style.overflowY = '';
+      }
     });
 
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         mainNav.classList.remove('active');
         mobileMenuBtn.classList.remove('open');
+        document.body.style.overflowY = '';
       });
+    });
+
+    // Cerrar al clickear afuera
+    document.addEventListener('click', (e) => {
+      if (mainNav.classList.contains('active') && !mainNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        mainNav.classList.remove('active');
+        mobileMenuBtn.classList.remove('open');
+        document.body.style.overflowY = '';
+      }
     });
   }
 

@@ -26,19 +26,18 @@
 </head>
 <body>
 
-  <!-- Top Bar / Aviso rápido -->
-  <div class="top-announcement">
-    <div class="container announcement-inner">
-      <div class="announcement-content">
-        <span class="announcement-tag">Zona Norte</span>
-        <span>Servicio profesional a domicilio en Countries, Quintas y Predios Industriales</span>
-      </div>
-      <a href="https://wa.me/5491100000000?text=Hola%20Green%20Brown!%20Quiero%20consultar%20por%20un%20servicio%20de%20mantenimiento" target="_blank" rel="noopener" class="top-link">Cotizá en el día →</a>
-    </div>
-  </div>
-
-  <!-- Header / Barra de Navegación -->
+  <!-- Header / Barra de Navegación Fija -->
   <header class="site-header" id="header">
+    <!-- Top Bar / Aviso rápido -->
+    <div class="top-announcement">
+      <div class="container announcement-inner">
+        <div class="announcement-content">
+          <span class="announcement-tag">Zona Norte</span>
+          <span>Servicio profesional a domicilio en Countries, Quintas y Predios Industriales</span>
+        </div>
+      </div>
+    </div>
+
     <div class="container header-container">
       <a href="index.html" class="brand-logo" aria-label="Green Brown Inicio">
         <img src="images/logo.png" alt="Green Brown Espacios Verdes" class="logo-img">
@@ -70,73 +69,40 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-grid">
-      <div class="hero-content reveal-left">
+  <!-- Hero Section con Fondo Fotográfico de Paisaje -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-media">
+      <img src="images/hero-bg.jpg" alt="Parque con césped impecable" class="hero-bg-img">
+    </div>
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content text-center reveal">
         <div class="badge-tag">
-          <span class="badge-dot"></span> Mantenimiento de Espacios Verdes & parquizaciones
+          <span class="badge-dot"></span> Cuidado Integral de Espacios Verdes
         </div>
         <h1 class="hero-title">
-          El cuidado profesional que tu <span class="text-accent">parque merece</span>.
+          El cuidado profesional que tu <span class="text-accent-hero">parque merece</span>.
         </h1>
         <p class="hero-description">
-          Trabajamos en superficies grandes y pequeñas con maquinaria profesional propia: corte de precisión, nivelación, colocación de grama, parquizaciones y desmonte integral en zona norte.
+          Mantenimiento de precisión, nivelación de suelo y parquización para countries, quintas y predios industriales de Zona Norte.
         </p>
 
-        <!-- Puntos destacados de confianza -->
-        <div class="hero-highlights">
-          <div class="highlight-item">
-            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span>Autonomía total con herramientas propias</span>
-          </div>
-          <div class="highlight-item">
-            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span>Countries, Quintas y Predios Industriales</span>
-          </div>
-          <div class="highlight-item">
-            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span>Cotización express por WhatsApp</span>
-          </div>
-        </div>
-
-        <div class="hero-cta-group">
-          <a href="https://wa.me/5491100000000?text=Hola%20Green%20Brown!%20Quiero%20solicitar%20un%20presupuesto%20para%20mantenimiento%20de%20mi%20terreno." target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        <div class="hero-cta-group justify-center">
+          <a href="https://wa.me/5491100000000?text=Hola%20Green%20Brown!%20Quiero%20solicitar%20un%20presupuesto%20para%20mantenimiento%20de%20mi%20terreno." target="_blank" rel="noopener" class="btn btn-whatsapp-giant">
+            <svg class="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 18.15c-1.52 0-3-.41-4.3-1.18l-.31-.18-3.19.84.85-3.11-.2-.32a8.03 8.03 0 01-1.23-4.29c0-4.46 3.63-8.09 8.09-8.09 2.16 0 4.19.84 5.72 2.37 1.53 1.53 2.37 3.56 2.37 5.72 0 4.46-3.63 8.09-8.09 8.09zm4.43-6.07c-.24-.12-1.44-.71-1.66-.79-.23-.08-.39-.12-.56.12-.17.24-.64.79-.79.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.95-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.29.37-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.16 0-.43.06-.66.31-.23.24-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.16 1.77 2.7 4.29 3.78.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
             <span>Cotizar por WhatsApp</span>
-            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
           </a>
-          <a href="#cotizador" class="btn btn-secondary btn-lg">
+          <a href="#cotizador" class="btn btn-secondary-light btn-lg">
             Calcular Presupuesto
           </a>
         </div>
-      </div>
 
-      <!-- Hero Visual Graphic -->
-      <div class="hero-visual reveal-right delay-150">
-        <div class="visual-wrapper">
-          <img src="images/hero-art.svg" alt="Parque paisajístico Green Brown" class="hero-art-img">
-          
-          <!-- Card Flotante 1: Cobertura -->
-          <div class="floating-stat-card card-top">
-            <div class="stat-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-            </div>
-            <div class="stat-info">
-              <span class="stat-number">Countries & Quintas</span>
-              <span class="stat-label">Pilar, San Sebastián, Tigre, Nordelta, Escobar, Puertos</span>
-            </div>
-          </div>
-
-          <!-- Card Flotante 2: Prolijidad -->
-          <div class="floating-stat-card card-bottom">
-            <div class="stat-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-            </div>
-            <div class="stat-info">
-              <span class="stat-number">Corte & Perfilado</span>
-              <span class="stat-label">Terminación prolija y nivelada</span>
-            </div>
-          </div>
+        <div class="hero-trust-bar">
+          <span class="trust-item">Maquinaria Propia</span>
+          <span class="trust-dot">•</span>
+          <span class="trust-item">Atención a Countries</span>
+          <span class="trust-dot">•</span>
+          <span class="trust-item">Respuesta en el Día</span>
         </div>
       </div>
     </div>
@@ -231,7 +197,7 @@
           </div>
           <a href="#" id="estimatorWhatsappBtn" target="_blank" rel="noopener" class="btn btn-whatsapp-action">
             <svg class="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 18.15c-1.52 0-3-.41-4.3-1.18l-.31-.18-3.19.84.85-3.11-.2-.32a8.03 8.03 0 01-1.23-4.29c0-4.46 3.63-8.09 8.09-8.09 2.16 0 4.19.84 5.72 2.37 1.53 1.53 2.37 3.56 2.37 5.72 0 4.46-3.63 8.09-8.09 8.09zm4.43-6.07c-.24-.12-1.44-.71-1.66-.79-.23-.08-.39-.12-.56.12-.17.24-.64.79-.79.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.95-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.29.37-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.16 0-.43.06-.66.31-.23.24-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.16 1.77 2.7 4.29 3.78.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
-            <span>Consultar Presupuesto con estos datos</span>
+            <span>Consultar selección</span>
           </a>
         </div>
       </div>
@@ -480,58 +446,47 @@
       </div>
 
       <div class="faq-accordion" id="faqAccordion">
-        <!-- Item 1 -->
+        <!-- Item 1: Lluvia o mal clima -->
         <div class="faq-item reveal delay-100">
           <button class="faq-trigger" aria-expanded="false">
-            <span>¿Tengo que proveer alguna herramienta o nafta para las máquinas?</span>
+            <span>¿Qué sucede si llueve o hay mal clima en el día pactado?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-panel">
-            <p>No, para nada. En Green Brown operamos con autonomía 100%. Llevamos nuestras propias motoguadañas, cortadoras autopropulsadas, tractores (cuando aplica), combustible, tanza y elementos de protección personal.</p>
+            <p>Reprogramamos la visita automáticamente dentro de las 48 horas siguientes para no cortar el ciclo de crecimiento del pasto, avisándote previamente por WhatsApp.</p>
           </div>
         </div>
 
-        <!-- Item 2 -->
+        <!-- Item 2: Presencia en la casa -->
         <div class="faq-item reveal delay-150">
           <button class="faq-trigger" aria-expanded="false">
-            <span>¿Con qué frecuencia recomiendan el mantenimiento?</span>
+            <span>¿Es necesario que haya alguien en la propiedad durante el trabajo?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-panel">
-            <p>En temporada de primavera y verano (cuando el pasto crece con más fuerza), recomendamos un corte semanal o cada 10 días para mantener el césped bajo y tupido. En otoño e invierno la frecuencia suele espaciarse a cada 15 o 21 días.</p>
+            <p>No es obligatorio. En countries y quintas coordinamos el ingreso con la guardia o tranquera. Al finalizar el corte, te enviamos fotos y videos de cómo quedó tu parque.</p>
           </div>
         </div>
 
-        <!-- Item 3 -->
+        <!-- Item 3: Restos de pasto -->
         <div class="faq-item reveal delay-200">
           <button class="faq-trigger" aria-expanded="false">
             <span>¿Qué hacen con los restos de pasto y ramas cortadas?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-panel">
-            <p>Nos adaptamos a las normas de tu barrio o municipio: embolsamos los restos de corte en bolsas de residuos para su recolección o los acopiamos en la zona designada para descarte vegetal de tu country.</p>
+            <p>Nos adaptamos a las normas de tu barrio o municipio: embolsamos los restos de corte en bolsas resistentes para su recolección o los acopiamos en la zona designada para descarte vegetal de tu country.</p>
           </div>
         </div>
 
-        <!-- Item 4 -->
+        <!-- Item 4: Medios de pago -->
         <div class="faq-item reveal delay-250">
           <button class="faq-trigger" aria-expanded="false">
-            <span>¿Cómo se calcula el costo de colocar césped en panes?</span>
+            <span>¿Cuáles son los medios de pago disponibles?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-panel">
-            <p>El valor depende de los metros cuadrados totales a cubrir, si el terreno requiere nivelación previa con aporte de tierra negra fértil, y el costo del flete de la grama fresca recién extraída del campo de cultivo.</p>
-          </div>
-        </div>
-
-        <!-- Item 5 -->
-        <div class="faq-item reveal delay-300">
-          <button class="faq-trigger" aria-expanded="false">
-            <span>¿Trabajan con empresas, loteos y administraciones de consorcios?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-panel">
-            <p>Sí, prestamos servicio tanto a propietarios particulares como a consorcios, administraciones de countries y predios industriales. Emitimos factura correspondiente para cada contratación.</p>
+            <p>Podés abonar por transferencia bancaria (con factura A o B) o en efectivo al finalizar la labor. Para clientes periódicos ofrecemos abonos mensuales unificados.</p>
           </div>
         </div>
       </div>
@@ -543,16 +498,47 @@
     <div class="container">
       <div class="cta-banner-card reveal-scale">
         <div class="cta-banner-content">
-          <span class="cta-tag">Atención Inmediata</span>
+          <span class="cta-tag">Compromiso Green Brown</span>
           <h2 class="cta-heading">¿Querés que tu parque luzca impecable todos los días?</h2>
           <p class="cta-sub">
-            Escribinos ahora por WhatsApp contándonos qué necesitás y te respondemos en el día con la mejor propuesta para tu terreno.
+            Cuidamos tu tiempo y tu propiedad. Coordinamos tu servicio con cronograma fijo para que te olvides del pasto alto y solo te dediques a disfrutarlo.
           </p>
-          <div class="cta-actions">
-            <a href="https://wa.me/5491100000000?text=Hola%20Green%20Brown,%20quiero%20coordinar%20un%20servicio%20de%20mantenimiento%20para%20mi%20terreno." target="_blank" rel="noopener" class="btn btn-whatsapp-giant">
-              <svg class="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 18.15c-1.52 0-3-.41-4.3-1.18l-.31-.18-3.19.84.85-3.11-.2-.32a8.03 8.03 0 01-1.23-4.29c0-4.46 3.63-8.09 8.09-8.09 2.16 0 4.19.84 5.72 2.37 1.53 1.53 2.37 3.56 2.37 5.72 0 4.46-3.63 8.09-8.09 8.09zm4.43-6.07c-.24-.12-1.44-.71-1.66-.79-.23-.08-.39-.12-.56.12-.17.24-.64.79-.79.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.95-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.29.37-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.16 0-.43.06-.66.31-.23.24-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.16 1.77 2.7 4.29 3.78.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
-              <span>Hablar con Green Brown por WhatsApp</span>
-            </a>
+
+          <!-- Razones de persuasión directa / Ventajas clave -->
+          <div class="cta-reasons-grid">
+            <div class="cta-reason-item">
+              <div class="reason-indicator"></div>
+              <div class="reason-text">
+                <strong>Sin cancelaciones imprevistas</strong>
+                Cumplimiento estricto de los días y frecuencias pactadas. Tu jardín nunca queda a la espera.
+              </div>
+            </div>
+            <div class="cta-reason-item">
+              <div class="reason-indicator"></div>
+              <div class="reason-text">
+                <strong>Terminaciones al detalle</strong>
+                Corte a nivel, perfilado fino de bordes en canteros y soplado final de veredas y accesos.
+              </div>
+            </div>
+            <div class="cta-reason-item">
+              <div class="reason-indicator"></div>
+              <div class="reason-text">
+                <strong>Autonomía operativa</strong>
+                Maquinaria propia a explosión de alta potencia. No dependemos de tomas eléctricas ni de tu presencia.
+              </div>
+            </div>
+            <div class="cta-reason-item">
+              <div class="reason-indicator"></div>
+              <div class="reason-text">
+                <strong>Trato transparente y directo</strong>
+                Presupuesto cerrado sin sorpresas y comunicación fluida en el día ante cualquier consulta.
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-floating-prompt">
+            <span class="prompt-pulse"></span>
+            <span>Escribinos cuando quieras mediante el botón de WhatsApp flotante y te respondemos en el día.</span>
           </div>
         </div>
       </div>
@@ -567,38 +553,19 @@
         <p class="footer-tagline">
           Mantenimiento profesional de espacios verdes e industriales. Calidad, puntualidad y cuidado de cada detalle.
         </p>
+      </div>
+
+      <div class="footer-social-wrap">
         <div class="social-links">
           <a href="https://www.instagram.com/green.brown3962" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram de Green Brown">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             <span>Instagram (@green.brown3962)</span>
           </a>
           <a href="https://www.facebook.com/green.brown3962" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook de Green Brown">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             <span>Facebook (Green Brown)</span>
           </a>
         </div>
-      </div>
-
-      <div class="footer-links-group">
-        <h4 class="footer-title">Navegación</h4>
-        <ul class="footer-nav">
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#cotizador">Cotizador Rápido</a></li>
-          <li><a href="#cobertura">Zonas de Cobertura</a></li>
-          <li><a href="#proceso">Cómo Trabajamos</a></li>
-          <li><a href="#faq">Preguntas Frecuentes</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-links-group">
-        <h4 class="footer-title">Zonas Principales</h4>
-        <ul class="footer-nav">
-          <li>Escobar & San Sebastián</li>
-          <li>Tigre & Villanueva</li>
-          <li>Benavídez & Maschwitz</li>
-          <li>Pilar & Corredores</li>
-          <li>Predios Industriales</li>
-        </ul>
       </div>
     </div>
 
