@@ -36,7 +36,7 @@ WEBS/GreenBrown/
 ## 🎯 Arquitectura Simplificada (Landing Page Single-Page)
 
 1. **`index.html` (Landing de Conversión Directa)**:
-   - Diseñado para responder en segundos: Hero editorial, bloque visual de diferenciales de confianza ("La Diferencia"), catálogo de 4 servicios esenciales, cotizador interactivo en 30 segundos, preguntas frecuentes (FAQ), caption de modalidad de trabajo con medios de pago y botón flotante de WhatsApp.
+   - Diseñado para responder en segundos: Hero editorial con llamada a la acción, catálogo limpio de 4 servicios esenciales, cotizador interactivo en 30 segundos, preguntas frecuentes (FAQ), caption de modalidad de trabajo con medios de pago aceptados y botón flotante de WhatsApp.
 2. **Scroll Reveal & Microinteracciones**:
    - Animaciones fluidas al hacer scroll basadas en `IntersectionObserver`, ligeras y accesibles (`prefers-reduced-motion`).
 3. **Navegación Fluida con Anclas Internas**:

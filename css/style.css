@@ -761,128 +761,6 @@ h1, h2, h3, h4 {
   transform: translateX(4px);
 }
 
-/* ==========================================================================
-   POR QUÉ GREEN BROWN (DIFERENCIALES)
-   ========================================================================== */
-.why-section {
-  padding: 6rem 0;
-  background-color: var(--color-white);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.why-grid {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.why-header .section-title {
-  font-size: clamp(2rem, 3.5vw, 2.6rem);
-  margin-bottom: 1.2rem;
-}
-
-.why-header .section-subtitle {
-  margin-bottom: 2rem;
-}
-
-.why-contact-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
-  background-color: var(--color-sand-light);
-  border: 1px solid var(--color-border);
-  padding: 0.7rem 1.2rem;
-  border-radius: var(--radius-full);
-  font-size: 0.9rem;
-}
-
-.why-contact-pill a {
-  font-weight: 700;
-  color: var(--color-primary);
-  text-decoration: underline;
-}
-
-.pillars-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
-}
-
-.pillar-card {
-  position: relative;
-  min-height: 250px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-border);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.pillar-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.pillar-bg-autonomia {
-  background-image: url('../images/card-autonomia.jpg');
-}
-
-.pillar-bg-periodicidad {
-  background-image: url('../images/card-periodicidad.jpg');
-}
-
-.pillar-bg-entorno {
-  background-image: url('../images/card-entorno.jpg');
-}
-
-.pillar-bg-seriedad {
-  background-image: url('../images/card-seriedad.jpg');
-}
-
-.pillar-overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, rgba(12, 24, 17, 0.78) 0%, rgba(10, 20, 14, 0.94) 100%);
-  transition: background 0.35s ease;
-  z-index: 1;
-}
-
-.pillar-card:hover .pillar-overlay {
-  background: radial-gradient(circle at center, rgba(12, 24, 17, 0.68) 0%, rgba(10, 20, 14, 0.9) 100%);
-}
-
-.pillar-body {
-  position: relative;
-  z-index: 2;
-  padding: 2.2rem 1.8rem;
-  color: var(--color-white);
-  text-align: center;
-  width: 100%;
-}
-
-.pillar-title {
-  color: var(--color-white);
-  font-size: 1.35rem;
-  margin-bottom: 0.65rem;
-  letter-spacing: -0.01em;
-}
-
-.pillar-desc {
-  color: #D6E3DB;
-  font-size: 0.9rem;
-  line-height: 1.55;
-  max-width: 320px;
-  margin: 0 auto;
-}
 
 /* ==========================================================================
    ZONA DE COBERTURA
@@ -1426,11 +1304,6 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
   }
 
-  .why-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
   .steps-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -1555,18 +1428,6 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
   }
 
-  .pillars-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .pillar-card {
-    min-height: 200px;
-  }
-
-  .pillar-body {
-    padding: 1.8rem 1.4rem;
-  }
 
   .coverage-card {
     padding: 2.8rem 1.4rem;
