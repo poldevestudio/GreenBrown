@@ -438,17 +438,15 @@ h1, h2, h3, h4 {
   height: 100%;
   object-fit: cover;
   object-position: center 40%;
-  transform: scale(1.05);
-  filter: brightness(0.9);
+  transform: scale(1.01);
+  filter: brightness(0.92);
 }
 
 .hero-bg-overlay {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: radial-gradient(circle at center 35%, rgba(14, 28, 20, 0.65) 0%, rgba(10, 22, 15, 0.9) 75%, rgba(8, 16, 11, 0.98) 100%);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background: radial-gradient(circle at center 35%, rgba(14, 28, 20, 0.58) 0%, rgba(10, 22, 15, 0.85) 75%, rgba(8, 16, 11, 0.95) 100%);
 }
 
 .hero-container {
@@ -823,7 +821,8 @@ h1, h2, h3, h4 {
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -852,50 +851,37 @@ h1, h2, h3, h4 {
 .pillar-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(16, 32, 23, 0.38) 0%, rgba(12, 24, 17, 0.88) 60%, rgba(10, 20, 14, 0.96) 100%);
+  background: radial-gradient(circle at center, rgba(12, 24, 17, 0.78) 0%, rgba(10, 20, 14, 0.94) 100%);
   transition: background 0.35s ease;
   z-index: 1;
 }
 
 .pillar-card:hover .pillar-overlay {
-  background: linear-gradient(180deg, rgba(16, 32, 23, 0.22) 0%, rgba(12, 24, 17, 0.82) 55%, rgba(10, 20, 14, 0.94) 100%);
+  background: radial-gradient(circle at center, rgba(12, 24, 17, 0.68) 0%, rgba(10, 20, 14, 0.9) 100%);
 }
 
 .pillar-body {
   position: relative;
   z-index: 2;
-  padding: 1.8rem 1.6rem;
+  padding: 2.2rem 1.8rem;
   color: var(--color-white);
-}
-
-.pillar-tag {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #C3E6CC;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 0.25rem 0.65rem;
-  border-radius: var(--radius-full);
-  margin-bottom: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 100%;
 }
 
 .pillar-title {
   color: var(--color-white);
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.35rem;
+  margin-bottom: 0.65rem;
   letter-spacing: -0.01em;
 }
 
 .pillar-desc {
   color: #D6E3DB;
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 /* ==========================================================================
@@ -1162,7 +1148,7 @@ h1, h2, h3, h4 {
 
 /* Caja compacta de Medios de Pago */
 .payment-methods-box {
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   padding: 1.4rem 1.8rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1579,7 +1565,7 @@ h1, h2, h3, h4 {
   }
 
   .pillar-body {
-    padding: 1.4rem 1.2rem;
+    padding: 1.8rem 1.4rem;
   }
 
   .coverage-card {
