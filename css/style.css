@@ -719,8 +719,8 @@ h1, h2, h3, h4 {
 .service-desc {
   font-size: 0.95rem;
   color: var(--color-text-muted);
-  line-height: 1.6;
-  margin-bottom: 1.4rem;
+  line-height: 1.65;
+  margin-bottom: 0;
 }
 
 .service-features {
